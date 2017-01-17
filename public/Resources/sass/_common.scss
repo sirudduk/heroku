@@ -1,0 +1,31 @@
+%reset-list-group ul,
+%reset-list-group ol,
+%reset-list,
+%reset-list {
+  margin-top:    0;
+  margin-bottom: 0;
+  padding-left:  0;
+  list-style:    none;
+}
+
+%rm-img-blank {
+	vertical-align: bottom;
+}
+
+%align-img-bottom img + *,{
+  overflow: hidden;
+}
+
+%rwd-img,
+%rwd-video {
+	width: 100%;
+	height: auto;
+}
+
+.red-img-3-4 {
+	@extend %rwd-video;
+	height: 0;
+	padding-bottom: 75%;
+	background-size: cover;
+	background-position: center center;
+}
