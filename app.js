@@ -66,6 +66,6 @@ app.get('/login', function(req,res){
 app.get('/loding',function(req,res){
     res.send('<h1>login</h1>');
 });
-app.listen(3000, function(){
+app.listen(process.env.PORT || 3000, function(){
     console.log('Connected 3000 port !')
 });
