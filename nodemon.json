@@ -1,8 +1,7 @@
 {
   "verbose": false,
   "watch": [
-    "app_ex.js",
     "app.js"
   ],
-  "exec": "node app_ex.js"
+  "exec": "node app.js"
 }
