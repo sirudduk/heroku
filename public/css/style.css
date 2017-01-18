@@ -11,7 +11,26 @@ h1 {
     color: #F0949A;
 }
 
-button {
+.menu {
+    margin-bottom: 50px;
+}
+
+.joystick {
+  min-width:50px;
+  min-height:50px;
+  margin:5px;
+  font-size:230%;
+  display:inline-block;
+}
+
+.joystick_wrap {
+    text-align: center;
+}
+#left {
+    margin-right: 100px;
+}
+
+button.shadow {
     color: white !important;
     letter-spacing: 0.5px;
     outline: none;
@@ -19,23 +38,13 @@ button {
     border-radius: 8px;
 }
 
-.container {
-    margin-left: 50%;
-    transform: translateX(-50%);
-    display: inline-block;
-    margin-top: 50px;
-    text-align: center;
-    
-}
+
         
 #wrap {
     text-align: center;
-    margin-top: 10%;
-    display: none;
+    margin-top: 10px;
 }
 
 #tetris {
     border: solid .2em #82A3D8;
-    background-image: url(../images/background.jpg);
-    background-size: 240px 480px;
 }

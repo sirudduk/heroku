@@ -5,6 +5,10 @@ let handler = true;
 const leftBtn = doc.getElementById('left_btn');
 const rightBtn = doc.getElementById('right_btn');
 const startBtn = doc.getElementById('start_btn');
+const joystickLeft = doc.getElementById('left');
+const joystickRight = doc.getElementById('right');
+const joystickDown = doc.getElementById('down');
+const joystickUp = doc.getElementById('up');
 const score = doc.getElementById('score_text');
 const wrap = doc.getElementById('wrap');
 leftBtn.addEventListener('click',()=> {
@@ -15,15 +19,29 @@ rightBtn.addEventListener('click', ()=> {
 })
 context.scale(20,20);
 
-startBtn.addEventListener('click', ()=> {
-    wrap.style.display = 'block';
-    score.innerText = "SCORE :";
-    playerReset();
-    updateScore();
-    update();
+startBtn.addEventListener('click', (e)=> {
+    
+    location.reload();
 
 })
 
+joystickLeft.addEventListener('click',()=>{
+    playerMove(-1);
+})
+
+joystickRight.addEventListener('click',()=> {
+    playerMove(+1);
+})
+joystickDown.addEventListener('click',()=> {
+    playerDrop();
+})
+joystickUp.addEventListener('click',()=> {
+    if ( handler == true) {
+        playerRotate(+1);
+    } else {
+        playerRotate(0);
+    }
+})
 
 // 쌓였을때 없애기
 function arenaSweep() {
@@ -143,6 +161,7 @@ function drawMatrix(matrix, offset){
 
 
 function merge(arena, player) {
+    
     player.matrix.forEach((row, y) => {
         row.forEach((value, x) => {
             if (value !== 0) {
@@ -174,6 +193,7 @@ function playerMove(dir) {
 }
 
 function playerReset() {
+    score.innerText = "SCORE :";
     const pieces = 'ILJOTSZ';
     player.matrix = createPiece(pieces[pieces.length * Math.random() | 0]);
     player.pos.y = 0;
@@ -260,6 +280,7 @@ const player = {
     score: 0,
 }
 // console.log(player.matrix);
+
     
     // keyCode값으로 방향키 setting 
 document.addEventListener('keydown',event => {
@@ -283,3 +304,7 @@ document.addEventListener('keydown',event => {
         }
     }
 })
+
+playerReset();
+updateScore();
+update();
