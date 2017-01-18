@@ -18,6 +18,6 @@ app.use(express.static('public'));
 // //     console.log('changed?');
 // // })
 
-app.listen(4000, ()=> {
+app.listen(process.env.PORT || 4000, ()=> {
     console.log('Connected 4000 port !!!!');
 })
