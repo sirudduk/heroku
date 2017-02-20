@@ -1,23 +1,17 @@
 var express = require('express');
-var app =  express();
-var bodyParser = require('body-parser');
-app.locals.pretty = true;
+var app = express();
+var port = process.env.PORT || 3000;
 
 app.set('view engine','pug');
-app.set('views','./views');
-
-app.get('/',(req,res)=> {
-    res.render('temp');
-})
-
-
+app.set('views', './views');
 app.use(express.static('public'));
 
-// // app.get('/',(req,res)=> {
-// //     res.send('temp.html');
-// //     console.log('changed?');
-// // })
-
-app.listen(process.env.PORT || 4000, ()=> {
-    console.log('Connected 4000 port !!!!');
+app.get('/', function(req,res) {
+    res.send('hello')
 })
+
+
+
+app.listen(port, function(){
+    console.log('Connected 3000 port !')
+});

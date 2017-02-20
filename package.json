@@ -1,21 +1,25 @@
 {
-  "name": "service",
+  "name": "heroku",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon app",
-    "start": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirudduk/heroku.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sirudduk/heroku/issues"
+  },
+  "homepage": "https://github.com/sirudduk/heroku#readme",
   "dependencies": {
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
-    "jade": "^1.11.0",
-    "multer": "^1.2.1",
-    "pug": "^2.0.0-beta6",
-    "supervisor": "^0.12.0"
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "nodemon": "^1.11.0",
+    "pug": "^2.0.0-beta11"
   }
 }
