@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+
+.reset-list-group ul,
+.reset-list-group ol,
+ul.reset-list,
+ol.reset-list {
+  margin-top:    0;
+  margin-bottom: 0;
+  padding-left:  0;
+  list-style:    none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.blank-bottom-img img + *,
+img.blank-bottom + * {
+  overflow: hidden;
+}
+
+/*컨텐츠 이미지 (<img>)에 적용되는 fluid image*/
+
+img.flex-img {
+  width: 100%;
+  height: auto;
+}
+
+img.keep-original-scale {
+  max-width: 100%;
+}
+
+/*배경 이미지(CSS)에 적용되는 Fluid BG Image*/
+
+.flex-img-3-4 {
+  width: 100%;
+  padding-bottom: 75%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.flex-img-9-16 {
+  width: 100%;
+  padding-bottom: 56.25%;
+  background-size: cover;
+  background-position: center center;
+}
+
+img.horizontal-center-img {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.clearfix::after,
+.cf::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.readable-hidden {
+  overflow: hidden;
+  position: absolute;
+  width:    1px;
+  height:   1px;
+  margin:   -1px;
+  border:   0;
+  padding:  0;
+}
+.readable-hidden.focusable:focus {
+  overflow: visible;
+  position: static;
+  clip:     auto;
+  width:    auto;
+  height:   auto;
+  margin:   0;
+}
