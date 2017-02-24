@@ -7,7 +7,9 @@ app.set('views', './views');
 app.use(express.static('public'));
 
 
-
+app.get('/main',function(req,res) {
+    res.render('main');
+});
 
 
 app.listen(port, function(){
