@@ -126,3 +126,18 @@ header {
     display: block;
 }
 
+/* footer */
+
+footer {
+	text-align: center;
+	font-size: 0.8rem;
+	color: hsla(200, 30%, 70%, 1);
+    margin-bottom: 50px;
+    line-height: 1rem;
+}
+.sirudduk {
+    color:  #B1B1BF;
+}
+
+
+
