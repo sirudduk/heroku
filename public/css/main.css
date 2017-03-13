@@ -1,5 +1,6 @@
 * {
-    font-family: 'Roboto',sans-serif;
+    /* font 300 400 700 */
+    font-family: 'Nunito', sans-serif;
     box-sizing: border-box;
 }
 
@@ -11,18 +12,19 @@ a {
 
 
 .header-wrap {
-    width: 70vw;
-    min-width: 1020px;
-    margin: 0 auto;
+    padding: 30px 10%;
+    border-bottom: 1px solid #DDDDDD;
 }
 
 header {
-    margin: 30px 0;
+    min-width: 1020px;
+    margin: 0 auto;
 }
 
 #logo {
     display: inline;
     font-size: 2rem;
+    color: #2F2F2F;
 }
 
 
@@ -35,26 +37,92 @@ header {
     float: left;
     margin-left: 5rem;
     font-size: 1.2rem;
+    color: black;
+
+    
+}
+
+.menu:hover {
+    color: darkgray;
+    transition: all 0.4s ease;
 }
 
 /* main layout */
 
 .main-wrap {
-    border-top: 1px solid #777;
+    margin: 50px 100px;
     font-size: 3rem;
-}
-
-.left-box {
-    float: left;
-    background: url(../images/background.jpg);
-    height: 90vh;
-    width: 50%;
     
 }
 
-.right-box {
+.main-label {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    color: slategray;
+}
+
+/* content images url */
+
+.todoapp {
+    background: url(../images/todoapp.png);
+}
+
+.tetris {
+    background: url(../images/tetris.png);
+}
+.pocopay {
+    background: url(../images/pocopay.png);
+}
+.arbuzz {
+    background: url(../images/arbuzz.png);
+}
+.gallery {
+    background: url(../images/gallery.png);
+}
+
+
+.content-box {
+    cursor: pointer;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    transition: all .5s ease-in-out;
+    position: relative;
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(122,122,122,1);
+    -moz-box-shadow: 0px 1px 10px 0px rgba(122,122,122,1);
+    box-shadow: 0px 1px 10px 0px rgba(122,122,122,1);
+    border-radius: 10px;
+    margin: 20px 20px;
     float: left;
-    background: url(../images/background2.jpg);
-    height: 90vh;
+    height: 383px;
+}
+
+/* box size */
+
+.large {
     width: 50%;
 }
+
+.small {
+    width: 20%;
+}
+
+.midium {
+    width: 46%;
+}
+
+.content-box-comment {
+    position: absolute;
+    cursor: default;
+}
+.content-box:hover {
+    transform: scale(1.03);
+}
+
+.content-box>a {
+    width: inherit;
+    height: inherit;
+    display: block;
+}
+
