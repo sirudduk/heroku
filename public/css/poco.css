@@ -1,0 +1,738 @@
+@charset "UTF-8";
+
+h1 {
+	margin: 0px;
+}
+
+body {
+	font-family: 'Helvetica Neue', sans-serif;
+	min-width: 300px;
+	min-height: 500px;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-center {
+	flex-direction: column;
+	justify-content: center;
+}
+
+/* 헤드바 */
+
+.headbar {
+	padding: 15px 20px 12px 20px;
+	margin: 0 auto;
+	min-width: 300px;
+	font-weight: 200;
+	line-height: 1rem;
+	vertical-align: middle;
+	letter-spacing: 1.5px;
+}
+
+/*로고*/
+.logo {
+	display: inline;
+	float: left;
+	cursor: pointer;
+}
+
+
+/*네비게이션*/
+
+
+.hover-ef {
+	display: inline-block;
+	padding: 5px;
+	font-size: 1rem;
+	font-weight: 200;
+
+}
+
+.main-nav li, .menu ul, .menu button {
+	float: left;
+	margin-left: 30px;
+
+}
+
+.main-nav {
+	line-height: 1.3rem;
+}
+
+
+.hover-ef:hover {
+	color: #50c780;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+}
+
+
+.hamberger-btn {
+	float: right;
+	position: relative;
+	top: 5px;
+}
+
+.menu {
+	display: none;
+}
+
+/*메인 컨텐츠*/
+
+.main-content,.download-box {
+	padding: 30px 20px;
+}
+
+.main-content-wrap, .main-img {
+	background: linear-gradient(-45deg, #1087EE,#5A33AE);
+}
+
+.main-comment h1 {
+	padding-top: 2rem;
+	font-size: 2rem;
+	font-weight: 100;
+	color: white;
+	letter-spacing: 2px;
+	margin-bottom: 2rem;
+	line-height: 2.5rem;
+}
+
+.main-comment p {
+	font-size: 1rem;
+	font-weight: 100;
+	color: #eee;
+	letter-spacing: 2px;
+	margin-bottom: 3rem;
+	line-height: 1.5rem;
+}
+
+.main-btn a{
+	color: #eee;
+	border: 1px solid #50c780;
+	display: inline-block;
+	padding: 19px 32px;
+	background-color: #50c780;
+	border-radius: 5px;
+}
+
+
+/*메인컨텐츠 이미지*/
+
+
+.main-img {
+	background-image: url(../images/Artboard2.jpg);
+	width: 100vw;
+	height: 40vh;
+	background-size: cover;
+	background-position: center 20%;
+	position: relative;
+	min-height: 200px;
+}
+
+.main-img-comment {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	font-size: 1.5rem;
+	color: #eee;
+
+}
+
+/* 인터뷰 */
+
+.interview-box {
+	text-align: center;
+	margin: 0 auto;
+	width: 90vw;
+	padding: 50px 0;
+
+}
+
+
+
+.interview-cnt {
+	font-size: 0.9rem;
+	font-weight: 400;
+	letter-spacing: 1.3px;
+	line-height: 1.3rem;
+	color: #414141;
+	margin: 30px 0;
+
+}
+
+.interview-ipm {
+	color: #5B32AD;
+	background: #CCBBE9;
+	display: inline;
+}
+
+
+/* download section */
+
+.download img {
+	width: 80px;
+	height: 80px;
+	box-shadow: 0 10px 20px 0 #3a2168;
+	border-radius: 15px;
+	margin-top: 15px;
+}
+
+.download-btn img {
+	width: 200px;
+	height: 70px;
+}
+
+.download h1 {
+	font-size: 1.3rem;
+	font-weight: 200;
+	color: #fff;
+	letter-spacing: 1.5px;
+	margin: 30px 0;
+}
+
+
+.download-wrap {
+	background-color: #5B38AA;
+}
+
+.download-box {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+
+.download-btn {
+	display: flex;
+	flex-direction: column;
+}
+
+.download-btn a {
+	margin-bottom: 5px;
+}
+
+/* imformation-section */
+
+
+
+.imformation-part1 {
+	text-align: center;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #FFC6CC;
+}
+
+.imformation-part2 {
+	text-align: center;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: #F2EFF9;
+	padding-bottom: 30px;
+}
+
+.frame img {
+	width: 100%;
+	height: auto;
+	max-width: 300px;
+	margin-top: 30px;
+}
+
+.imformation-part2 .frame img {
+	max-width: 250px;
+}
+
+.frame-hover {
+	opacity: 0;
+    z-index: 15;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: opacity .35s ease-in-out;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+
+}
+
+.frame-hover-wrap {
+	margin: 20px;
+}
+
+.frame-hover-wrap h3 {
+	color: #5B38AA;
+	font-size: 1.5rem;
+	font-weight: 200;
+}
+
+.frame-hover-wrap p {
+	margin: 30px 0;
+	line-height: 1.2rem;
+
+}
+
+.imformation-part1:hover .frame-hover{
+	opacity: 0.8;
+	background: #FFC6CC;
+}
+
+.imformation-part2:hover .frame-hover {
+	opacity: 0.8;
+	background: #F2EFF9;
+}
+
+/* card section */
+
+.card-wrap {
+	padding: 30px 20px;
+}
+
+.card-box {
+	text-align: center;
+}
+
+.card-box h2 {
+	font-size: 2rem;
+	font-weight: 200;
+	color: #5032A0;
+}
+
+.card {
+	color: #414141;
+	font-weight: 200;
+	letter-spacing: 1px;
+	line-height: 1.3rem;
+}
+
+.mb {
+	margin: 30px 0;
+}
+
+/* footer */
+
+.container {
+	padding: 30px 20px;
+}
+
+.main-footer {
+	background: #000;
+	color: #fff;
+}
+
+.features, .pocopay {
+	display: none;
+}
+
+.category ul {
+	font-weight: 200;
+	letter-spacing: 1px;
+	font-size: 0.8rem;
+	line-height: 2rem;
+}
+
+.category ul a {
+	color: #fff;
+}
+
+.category h2 {
+	font-weight: 200;
+	line-height: 2.5rem;
+	letter-spacing: 1.5px;
+	font-size: 1.3rem;
+
+}
+
+/* 미디어 쿼리 */
+
+@media (min-width: 768px) and (max-width: 1161px) {
+	
+	.menu {
+		display: inherit;
+	}
+
+	.headbar {
+		margin: 0 auto;
+		padding: 15px;
+		margin-left: 5%;
+	}
+
+	.hamberger-btn {
+		display: none;
+	}
+	
+	.main-img {
+		height: 50vh;
+		min-height: 400px;
+	}
+
+
+	.main-content {
+		margin-left: 5%;
+		justify-content: space-around;
+		padding-right: 5%;
+		height: 40vh;
+		min-height: 400px;
+	}
+
+	.main-comment h1 {
+	font-size: 2.8rem;
+	font-weight: 200;
+	color: white;
+	letter-spacing: 2.5px;
+	margin-bottom: 3rem;
+	line-height: 4rem;
+}
+
+	.main-comment p {
+	font-size: 1.5rem;
+	font-weight: 100;
+	color: #eee;
+	letter-spacing: 2px;
+	margin-bottom: 3rem;
+}
+
+.icon-set {
+	display: none;
+}
+
+.interview-wrap {
+	min-height: 300px;
+}
+
+.interview-box {
+	padding-top: 40px;
+}
+
+.interview-cnt {
+	font-size: 1.2rem;
+	font-weight: 200;
+	color: black;
+	line-height: 2rem;
+}
+
+.interview-ipm {
+	font-size: 1rem;
+	background: #fff;
+	font-weight: 400;
+}
+
+.imformation-part1 {
+	width: 50%;
+	float: left;
+}
+
+.imformation-part2 {
+	width: 50%;
+	float: left;
+	height: 536px;
+}
+
+.card-box h2 {
+	font-size: 2.5rem;
+}
+
+.card p{
+	width: 30vw;
+	margin-left: 15%;
+}
+
+.white-card {
+	width: 50%;
+	float: left;
+
+}
+
+.blue-card {
+	width: 50%;
+	float: left;
+}
+
+.card-box {
+	padding: 0 5%;
+}
+
+.mb {
+	max-width: 300px;
+
+}
+
+.pocopay {
+	display: block;
+}
+
+.category {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.container {
+	width: 90vw;
+	margin: 0 auto;
+}
+
+.category ul {
+	font-weight: 100;
+	letter-spacing: 1.5px;
+	font-size: 1rem;
+	line-height: 2rem;
+}
+
+
+.category h2 {
+	font-weight: 200;
+	line-height: 4rem;
+	letter-spacing: 1.5px;
+	font-size: 1.5rem;
+
+}
+
+
+}
+
+
+
+@media (min-width: 1162px) {
+
+/* 헤드바 */
+
+.menu {
+	display: inherit;
+}
+	
+.headbar {
+	width: 70vw;
+	margin: 0 auto;
+}
+
+.menu-wrap {
+	float: right;
+}
+
+.main-btn {
+	margin-top: 30px;
+}
+
+.hamberger-btn {
+	display: none;
+}
+
+
+.icon-set svg:hover #appstore, .icon-set svg:hover #playstore {
+	fill: #50c780;
+	transition-duration: 0.3s;
+}
+
+/*메인 컨텐츠*/
+
+
+.main-content-box {
+	width: 70vw;
+	margin: 0 auto;
+	justify-content: center;
+	display: flex;
+}
+
+.main-content {
+	padding-right: 80px;
+}
+
+.main-img {
+	width: 50vw;
+	height: 93vh;
+}
+
+
+.main-content, .main-content-img {
+	width: 50%;
+}
+
+.main-comment h1 {
+	font-size: 3rem;
+	font-weight: 200;
+	color: white;
+	letter-spacing: 2.5px;
+	margin-bottom: 3rem;
+	line-height: 4rem;
+}
+
+.main-comment p {
+	font-size: 1.7rem;
+	font-weight: 100;
+	color: #eee;
+	letter-spacing: 2px;
+	margin-bottom: 3rem;
+	line-height: 2rem;
+}
+
+.interview-wrap {
+	min-height: 300px;
+}
+
+.interview-box {
+	width: 50vw;
+}
+
+.interview-cnt {
+	font-size: 1.3rem;
+	font-weight: 200;
+	color: black;
+	line-height: 2rem;
+}
+
+.interview-ipm {
+	font-size: 1.1rem;
+	background: #fff;
+	font-weight: 400;
+}
+
+.download, .download-btn, .download-box {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.appstore-btn  {
+	margin-right: 30px;
+	flex-grow: 1;
+}
+
+.download h1 {
+	font-size: 1.8rem;
+	font-weight: 100;
+}
+
+.download img {
+	margin: 0 30px 0 0;
+}
+
+.download-box {
+	width: 70vw;
+	margin: 0 auto;
+	
+}
+
+.download {
+	flex-grow: 2;
+}
+
+.download-btn a {
+	display: inline-flex;
+
+}
+
+.imformation-part1 {
+	width: 50%;
+	float: left;
+}
+
+.imformation-part2 {
+	width: 50%;
+	float: left;
+	height: 536px;
+}
+
+.frame-hover-wrap {
+	margin: 0 20%;
+}
+
+.card-box h2 {
+	font-size: 3rem;
+	margin-bottom: 30px;
+}
+
+.white-card {
+	width: 50%;
+	float: left;
+
+}
+
+.blue-card {
+	width: 50%;
+	float: left;
+}
+
+.card-box {
+	padding: 50px 5%;
+}
+
+.mb {
+	max-width: 100%;
+
+}
+
+.card {
+	font-size: 1.2rem;
+
+}
+
+
+.card p{
+	width: 30vw;
+	line-height: 1.7rem;
+	margin-left: 15%;
+}
+
+/* footer */
+
+.main-footer {
+	background: #000;
+	color: #fff;
+}
+
+.category {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.category h2 {
+	font-size: 1.5rem;
+	font-weight: 200;
+	margin-bottom: 20px;
+	letter-spacing: 1.5px;
+}
+
+.container {
+	width: 65vw;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.features, .pocopay {
+	display: block;
+}
+
+.category ul {
+	font-weight: 100;
+	letter-spacing: 1.5px;
+	font-size: 1rem;
+	line-height: 2rem;
+}
+
+
+.category h2 {
+	font-weight: 200;
+	line-height: 2rem;
+	letter-spacing: 1.5px;
+	font-size: 1.5rem;
+
+}
+
+
+}
+
