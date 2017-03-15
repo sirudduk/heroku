@@ -1,0 +1,301 @@
+doctype html
+html.no-js(lang='en')
+  head
+    meta(http-equiv='X-UA-Compatible', content='IE=Edge')
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, user-scalable=no')
+    title ARBUZZ &boxh; eCommurce Service
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=PT+Serif:400,400i', rel='stylesheet')
+    link(rel='stylesheet', href='css/normalize.min.css')
+    link(rel='stylesheet', href='css/960gs.css')
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', href='css/parallax.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/detectizr/2.2.0/detectizr.min.js')
+  body
+    .menu.montserrat
+      .container
+        .row
+          .col-3
+            p.menu-tel 24/7 &nbsp;037-2339-9874
+          h1.brand.col-2.prefix-2  arbuzz
+          .unb.col-3.prefix-2
+            nav.lang
+              button(type='button') en
+              ul
+                li
+                  button(type='button') en
+                li
+                  button(type='button') ko
+            nav.currency
+              button(type='button') usd
+              ul
+                li
+                  button(type='button') usd
+                li
+                  button(type='button') won
+            |  
+            button.btn-lock(type='button') lock
+            |  
+            button.btn-login(type='button') log in
+    nav.gnb.container
+      ul.row
+        li.has-sub-menu
+          a(href='') men
+        li.has-sub-menu
+          a(href='') women
+        li.has-sub-menu
+          a(href='') kids
+        li.has-sub-menu
+          a(href='') collection
+        li.has-sub-menu
+          a(href='') outerwear
+        li
+          a(href='') sale
+        li
+          a(href='') about
+        li
+          a(href='') blog
+        li
+          a(href='') services
+        li
+          a(href='') contacts
+    .header.carousel
+      nav.carousel-indicator
+        ul
+          li
+            button(type='button', aria-label='Arbuzz 70% Sales')
+          li.active
+            button(type='button', aria-label='Arbuzz 70% Sales')
+          li
+            button(type='button', aria-label='Arbuzz 70% Sales')
+          li
+            button(type='button', aria-label='Arbuzz 70% Sales')
+      .carousel-content-wrapper
+        .carousel-content
+          .container
+            h3.montserrat arbuzz
+            p.PT-serif Up to 70% off sale
+            |  
+            img(src='images/header/woman.png', alt='woman')
+    main.content-block.montserrat
+      .banner-container.container
+        .row
+          .banner-content.banner-shoes.col-4
+            h3.banner-headline
+              | shoes 
+              span.PT-serif.sub-headline sale
+          .banner-content.banner-leather-bags.col-4
+            h3.banner-headline
+              | leather
+              br
+              | bags
+          .banner-content.double-height.banner-woman.col-4
+            h3.banner-headline
+              | women 
+              span.PT-serif.sub-headline save 50%
+            |  
+            a.show-now(href='') shop now
+          .banner-content.banner-collection.col-8
+            h3.banner-headline
+              | collection 
+              span.PT-serif.sub-headline fall 2016
+            |  
+            a(href='') more
+      .products-tab.container
+        .tab-handle.row
+          .col-12
+            a.active(href='#featured-products', role='button') featured products
+            |  
+            a(href='#new-arrivals', role='button') new arrivals
+            |  
+            a(href='#best-sellers', role='button') best sellers
+        .products.row
+          #featured-products
+            .product-item.col-3(role='group')
+              .normal-view
+                img(src='images/products/flowy-printed-dress.jpg', alt='flowy printed dress')
+                h4.product-name flowy printed dress
+                .product-price $16
+              .hover-focus-view
+                a.button-add-to-shopping-cart(href='', role='button', aria-label='Add To Shopping Cart')
+                a.button-add-to-shopping-wishlist(href='', role='button', aria-label='Add To Wishlist')
+            .product-item.col-3(role='group')
+              .normal-view
+                .tag-new new
+                |  
+                img(src='images/products/fitted-dress.jpg', alt='fitted dress')
+                h4.product-name fitted dress
+                .product-price
+                  | $29.99 
+                  span.sale-price $35
+              .hover-focus-view
+                a.button-add-to-shopping-cart(href='', role='button', aria-label='Add To Shopping Cart')
+                a.button-add-to-shopping-wishlist(href='', role='button', aria-label='Add To Wishlist')
+            .product-item.col-3(role='group')
+              .normal-view
+                .tag-hit hit
+                |  
+                img(src='images/products/fluted-hem-dress.jpg', alt='fluted hem dress')
+                h4.product-name fluted hem dress
+                .product-price $48,99
+              .hover-focus-view
+                a.button-add-to-shopping-cart(href='', role='button', aria-label='Add To Shopping Cart')
+                a.button-add-to-shopping-wishlist(href='', role='button', aria-label='Add To Wishlist')
+            .product-item.col-3(role='group')
+              .normal-view
+                .tag-sale sale 30%
+                |  
+                img(src='images/products/textured-pleats-dress.jpg', alt='textured pleats dress')
+                h4.product-name textured pleats dress
+                .product-price $35,99
+              .hover-focus-view
+                a.button-add-to-shopping-cart(href='', role='button', aria-label='Add To Shopping Cart')
+                a.button-add-to-shopping-wishlist(href='', role='button', aria-label='Add To Wishlist')
+      .about-us.container
+        .row
+          .view.col-12
+            h3.headline about us
+            p.PT-serif.desc
+              | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of &quot;de Finibus Bonorum et Malorum&quot; (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, &quot;Lorem ipsum dolor sit amet..&quot;, comes from a line in section 1.10.32.
+            |  
+            a.ghost-button(href='') read more
+      .from-the-blog.container
+        .row
+          h3.col-12.headline from the blog
+        .tab-handle.row
+          .col-12
+            a.active(href='#last-articles', role='button') last articles
+            |  
+            a(href='#most-viewed', role='button') most viewed
+            |  
+            a(href='#featured', role='button') featured
+        .blog-contents.row
+          #last-articles
+            .blog-article.article-category-techno.col-4(role='group')
+              h4.blog-article-category techno
+              h3.blog-article-headline Sci-Fi Films Make Us Think Real-Life Robots Will Be Rriendly Says Study
+              p.blog-article-summary.PT-serif
+                | Robotics designers should model robots based on those in films if they want the public to interact with them.
+              |  
+              time.write-time(datetime='2016-09-04') 5 minutes ago
+            .blog-article.article-category-life.article-photo.col-4(role='group')
+              img(src='images/blog/life.jpg', alt='')
+              h4.blog-article-category life
+              h3.blog-article-headline Kanye West Claims He Sold $1 Million Worth Of Merchandise In Two Dayse
+              p.blog-article-summary.PT-serif We sort of want to see the receipts though.
+              |  
+              span.comments 43
+            .blog-article.article-category-travel.article-photo.col-4(role='group')
+              img(src='images/blog/travel.jpg', alt='')
+              h4.blog-article-category travel
+              h3.blog-article-headline
+                | The Five Most
+                br
+                | Lust-Worthy Watches
+                br
+                | From Baselworld
+              |  
+              span.author
+                img(src='images/blog/jared-paul-stern.png', alt='')
+                |  JARED PAUL STERN
+    footer.footer.montserrat
+      .container
+        .row
+          nav.footer-nav.col-7
+            .footer-nav-category
+              h4.footer-category-name men
+              ul
+                li
+                  a(href='') Jeans
+                li
+                  a(href='') Jumpers
+                li
+                  a(href='') Leather
+                li
+                  a(href='') Polo Shirts
+                li
+                  a(href='') Shorts
+                li
+                  a(href='') Boots
+                li
+                  a(href='') Watches
+            .footer-nav-category
+              h4.footer-category-name women
+              ul
+                li
+                  a(href='') Dresses
+                li
+                  a(href='') Jumpsuits
+                li
+                  a(href='') Shirts
+                li
+                  a(href='') T-shirts
+                li
+                  a(href='') Sweatshirts
+                li
+                  a(href='') Jackets
+                li
+                  a(href='') Coats
+            .footer-nav-category
+              h4.footer-category-name kids
+              ul
+                li
+                  a(href='') Shirts
+                li
+                  a(href='') T-shirts
+                li
+                  a(href='') Polos
+                li
+                  a(href='') Sweaters
+                li
+                  a(href='') Sweatshirts
+                li
+                  a(href='') Jackets
+                li
+                  a(href='') Watches
+          .footer-subscribe.col-5
+            h4.footer-category-name FOLLOW US
+            ul.footer-sns.row
+              li
+                a.footer-sns-twitter(href='', aria-label='Twitter')
+              li
+                a.footer-sns-instagram(href='', aria-label='Instagram')
+              li
+                a.footer-sns-facebook(href='', aria-label='Facebook')
+              li
+                a.footer-sns-dribbble(href='', aria-label='Dribbble')
+              li
+                a.footer-sns-behance(href='', aria-label='Behance')
+            h4.footer-category-name Subscribe us
+            form.footer-email-form(method='GET', action='#')
+              label.a11y-hidden(for='subcribe-email') E-mail
+              |  
+              input#subcribe-email(type='email', name='subcribe-email', placeholder='E-mail')
+              |  
+              button(type='button', aria-label='구독')
+      .footer-copyright
+        .container
+          .row
+            nav.footer-card-list.col-4
+              ul.row
+                li
+                  a.mastercard(href='', aria-label='Master Card')
+                li
+                  a.visa(href='', aria-label='Visa')
+                li
+                  a.paypal(href='', aria-label='Pay Pal')
+                li
+                  a.americanexpress(href='', aria-label='American Express')
+            .prefix-3.col-5
+              h5.footer-brand arbuzz
+              |  
+              small &copy; 2016 Arbuzz UI Kit. All rights reserved
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js')
+    script(src='http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js')
+    script(src='http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js')
+    script(src='js/toggleGrid.js')
+    script(src='js/app.js')
