@@ -22,7 +22,7 @@ app.get('/poco',function(req,res) {
     res.render('pocopay');
 });
 app.get('/arbuzz',function(req,res) {
-    res.send('public/arbuzz/index.html');
+    res.render('arbuzz');
 });
 app.get('/gallery',function(req,res) {
     res.send('public/gallery/index.html');
