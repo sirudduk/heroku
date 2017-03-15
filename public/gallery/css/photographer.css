@@ -1,0 +1,77 @@
+
+.main {
+	margin-top: 100px;
+	text-align: center;
+	float: left;
+	margin-left: 15vw;
+}
+
+/* left side */
+.left_menu {
+	float: left;
+	position: fixed;
+	left: 5%;
+	top: 30%;
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+	font-weight: 100;
+	display: block;
+	
+}
+
+.left_menu li {
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+.left_menu li a{
+	color: white;
+	text-shadow: 1px 1px 3px #000;
+}
+.left_menu li:nth-child(1) {
+	text-shadow: 1px 1px 3px cadetblue;
+	margin: 0;
+}
+.left_menu li a:hover {
+	text-shadow: 1px 1px 3px palevioletred;
+	font-weight: bold;
+	
+}
+
+img {
+	max-width: 700px;
+	max-height: auto;
+}
+
+
+
+.name {
+	font-size: 2em;
+	color: #11357E;
+}
+.notice {
+	color: #B1B1BF;
+	line-height: 1em;
+	font-size: 1.5em;
+}
+
+.half {
+	margin-right: 30px;
+
+}
+.images {
+	width: 100%;
+	height: auto
+}
+.part-1, .part-2, .part-3, .part-4 {
+	margin-bottom: 25px;
+}
+
+.comment {
+	color: #444444;
+	font-size: 1em;
+}
+
+.Weronika, .Natalia, .Jeff {
+	display:none;
+}

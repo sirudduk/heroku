@@ -11,23 +11,26 @@ html(lang='KOR')
                 h1#logo sirudduk work
                 ul.menu-wrap
                     li.menu
-                        a(href='#') home
+                        a(href='/main') home
                     li.menu
                         a(href='#') about
                     li.menu
-                        a(href='#') github
+                        a.github.menu-icon(href='https://github.com/sirudduk') github
                     li.menu
-                        a(href='#') blog
+                        a.blog.menu-icon(href='http://sirudduk.tistory.com') blog
         main
             div.main-wrap.clearfix
                 h2.main-label portfolio
                 div.content-box.small.todoapp
-                    div.content-box-comment 
-                    a(href='#')
+                    a(href='/todoapp').content-box-comment this app is only develop of javascript
                 div.content-box.small.tetris
+                    a(href='/tetris').content-box-comment this app is only develop of javascript
                 div.content-box.large.pocopay
+                    a(href='/pocopay').content-box-comment this is responsive wep
                 div.content-box.midium.arbuzz
+                    a(href='/arbuzz').content-box-comment this web is develop of scroll Plugin 
                 div.content-box.midium.gallery
+                    a(href='/gallery').content-box-comment this wep is my first work :)
         footer
             p 2016. 
                 span.sirudduk sirudduk

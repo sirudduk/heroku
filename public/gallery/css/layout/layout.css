@@ -1,0 +1,116 @@
+body {
+	margin: 0;
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	color: #999999;
+	transition: all 0.3s ease;
+	outline: none;
+}
+
+button {
+	outline: none;
+}
+
+hr {
+	margin-top: 70px;
+	margin-bottom: 70px;
+	width: 500px;
+	
+}
+
+
+ul {
+	outline: none;
+	list-style: none;
+	padding: 0;
+}
+
+.head-bar {
+	height: 100px;
+	margin: 0 auto;
+	width: 80vw;
+	font-weight: 100;
+}
+.logo {
+	float: left;
+	margin-top: 10px;
+	font-family: "spoqaHansans";
+	line-height: 2.3em;
+	color: white;
+	text-shadow: 0px 0px 10px darkblue;
+	cursor: pointer;
+	text-align: right;
+    letter-spacing: 1px;
+}
+
+
+.category {
+	float: right;
+	margin-top: 40px;
+}
+
+.category>li {
+	float: left;
+	margin-right: 30px;
+	font-size: 1.5rem;
+	color: #999999;
+}
+.category > li:hover {
+    text-shadow: 1px 1px 3px cornflowerblue;
+}
+.images {
+    box-shadow: 0px 0px 8px slategray;
+}
+.comment_wrap {
+	margin-bottom: 50px;
+}
+
+footer {
+	text-align: center;
+	font-size: 0.8rem;
+	color: hsla(200, 30%, 70%, 1);
+    margin-bottom: 30px;
+
+}
+
+.sirudduk {
+	color: #B1B1BF;
+}
+
+/* depth menu design */
+.depth-1 {
+	position: relative;
+}
+.depth-1>li {
+	cursor: pointer;
+}
+.depth-2 {
+	position: absolute;
+	font-size: 1rem;
+	text-align: center;
+	padding: 1em;
+	display: none;
+	top: 15px;
+	left: 70px;
+	font-weight: 100;
+	
+}
+.depth-2>li {
+	margin-top: 3px;
+    text-shadow: none;
+}
+
+.depth-1 > li:hover {
+	padding-bottom: 1em;
+}
+.depth-1 > li:hover .depth-2 {
+	display: block;
+}
+
+.depth-2 > li a:hover {
+	/*color: palevioletred;*/
+	font-weight: bold;
+}

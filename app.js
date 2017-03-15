@@ -11,6 +11,22 @@ app.get('/main',function(req,res) {
     res.render('main');
 });
 
+app.get('/todoapp',function(req,res) {
+    res.send('public/todoapp/index.html');
+});
+
+app.get('/tetris',function(req,res) {
+    res.send('public/teris/index.html');
+});
+app.get('/pocopay',function(req,res) {
+    res.send('public/pocopay/index.html');
+});
+app.get('/arbuzz',function(req,res) {
+    res.send('public/arbuzz/index.html');
+});
+app.get('/gallery',function(req,res) {
+    res.send('public/gallery/index.html');
+});
 
 app.listen(port, function(){
     console.log('Connected 3000 port !')

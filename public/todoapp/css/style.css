@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+body {
+    font-family: 'Roboto',sans-serif;
+    background: #F2F2F2;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+::-ms-input-placeholder {
+    color: #fff;
+}
+::-moz-input-placeholder {
+    color: #fff;
+}
+:-moz-input-placeholder {
+    color: #fff;
+}
+
+
+
+.wrap {
+    width: 100%;
+    height: 80px;
+    background: #46BD94;
+    box-shadow: 0px 1px 2px rgba(44,62,80,0.10);
+    padding: 15px 15px 0 15px;
+    position: relative;
+    box-sizing: border-box;
+    
+}
+
+#enter_item {
+    width: 95%;
+    height: 50px; 
+    background: #63CDA6;
+    position: absolute;
+    border-radius: 10px;
+    border: 0;
+    font-size: 1.5rem;
+    padding: 0 30px 0 60px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+#add_btn {
+    width: 50px;
+    height: 50px;
+    border: 0;
+    border-radius: 10px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #fff;
+    box-shadow: 0px 1px 2px #848484;
+    cursor: pointer;
+}
+
+#add_btn svg {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -11px 0 0 -11px;
+    fill: #848484;
+}
+
+#add_btn:hover svg {
+    fill: #46BD94;
+    transition: fill 0.2s ease;
+}
+
+#todo {
+    padding: 25px;
+    
+}
+
+.item {
+    background: white;
+    list-style: none;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    box-shadow: 0px 1px 2px rgba(44,62,80,0.10);
+    padding: 15px 100px 15px 30px;
+    box-sizing: border-box;
+    line-height: 4.5rem;
+    color: dimgray;
+    position: relative;
+    
+    
+}
+.item:last-of-type {
+
+    margin-bottom: 0;
+}
+
+.do, .remove {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background: #fff;
+    cursor: pointer;
+}
+
+.do {
+    top: 25px;
+    right: 30px;
+}
+.remove {
+    top: 25px;
+    right: 110px;
+}
+
+.do::before {
+    content:'';
+    width: 1px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    background: #BEBEBE;
+}
+
+.item button svg {
+    width: 50px;
+    height: 50px;
+    
+}
+
+.do svg {
+    border-radius: 12px;
+    border: 1.5px solid #25b99a;
+    transition: background 0.2s ease;
+}
+
+.noFill {
+    fill: none;
+}
+
+.do svg .fill, .remove svg .fill{
+    fill: #25b99a;
+}
+
+.do:hover svg .fill {
+    fill: #fff;
+    transition: fill 0.3s ease;
+}
+.do:hover svg {
+    background: #63CDA6;
+    transition: fill 0.5s ease;
+}
+
+.remove:hover svg .fill {
+    fill: lightcoral;
+    transition: fill 0.5s ease;
+}
+
+.complete {
+    opacity: 0.3;
+    transition: all 0.6s ease .1s;
+}
+
+.complete:hover {
+    opacity: 1;
+    
+}
+
+.complete .do svg {
+    background: #63CDA6;
+}
+
+.complete .do svg .fill {
+    fill: #fff;
+}
+
+
+
+
+
+
+

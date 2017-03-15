@@ -12,7 +12,7 @@ a {
 
 
 .header-wrap {
-    padding: 30px 10%;
+    padding: 30px 15%;
     border-bottom: 1px solid #DDDDDD;
 }
 
@@ -35,7 +35,7 @@ header {
 
 .menu {
     float: left;
-    margin-left: 5rem;
+    margin-left: 3rem;
     font-size: 1.2rem;
     color: black;
 
@@ -47,6 +47,24 @@ header {
     transition: all 0.4s ease;
 }
 
+.github {
+    background: url(../images/github.png);
+}
+
+.blog {
+    background: url(../images/tistory.png)
+}
+
+.menu-icon {
+    text-indent: -9999px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    position: relative;
+    top: -5px;
+}
+
 /* main layout */
 
 .main-wrap {
@@ -56,11 +74,12 @@ header {
 }
 
 .main-label {
+    font-weight: 300;
     text-align: center;
     margin-bottom: 50px;
     font-size: 1.5rem;
     letter-spacing: 0.5px;
-    color: slategray;
+    color: gray;
 }
 
 /* content images url */
@@ -68,7 +87,6 @@ header {
 .todoapp {
     background: url(../images/todoapp.png);
 }
-
 .tetris {
     background: url(../images/tetris.png);
 }
@@ -85,7 +103,7 @@ header {
 
 .content-box {
     cursor: pointer;
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
     transition: all .5s ease-in-out;
     position: relative;
@@ -95,8 +113,40 @@ header {
     border-radius: 10px;
     margin: 20px 20px;
     float: left;
-    height: 383px;
+    height: 0;
+    width: 100%;
+    padding-bottom: 31%;
+    overflow: hidden;
 }
+
+.content-box-comment {
+    background: black;
+    color: white;
+    font-size: 1.5rem;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border-radius: 8px;
+    padding: 300px 40px;
+    transition: opacity .35s ease-in-out;
+    display: block;
+    position: absolute;
+    letter-spacing: 1px;
+    font-weight: 300;
+    line-height: 2.5rem;
+}
+
+.content-box:hover .content-box-comment {
+    opacity: 0.7;
+    -webkit-box-shadow: 0px 1px 20px 0px rgba(122,122,122,1);
+    -moz-box-shadow: 0px 1px 20px 0px rgba(122,122,122,1);
+    box-shadow: 0px 1px 20px 0px rgba(122,122,122,1);
+}
+
+
+
+
+
 
 /* box size */
 
@@ -112,19 +162,13 @@ header {
     width: 46%;
 }
 
-.content-box-comment {
-    position: absolute;
-    cursor: default;
-}
+
+
 .content-box:hover {
     transform: scale(1.03);
 }
 
-.content-box>a {
-    width: inherit;
-    height: inherit;
-    display: block;
-}
+
 
 /* footer */
 
