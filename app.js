@@ -18,8 +18,8 @@ app.get('/todoapp',function(req,res) {
 app.get('/tetris',function(req,res) {
     res.send('public/teris/index.html');
 });
-app.get('/pocopay',function(req,res) {
-    res.send('public/pocopay/index.html');
+app.get('/pay',function(req,res) {
+    res.render('pocopay');
 });
 app.get('/arbuzz',function(req,res) {
     res.send('public/arbuzz/index.html');
