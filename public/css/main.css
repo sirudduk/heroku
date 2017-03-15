@@ -127,13 +127,13 @@ header {
     width: 100%;
     opacity: 0;
     border-radius: 8px;
-    padding: 300px 40px;
+    padding: 50px 40px 0 40px;
     transition: opacity .35s ease-in-out;
     display: block;
     position: absolute;
     letter-spacing: 1px;
     font-weight: 300;
-    line-height: 2.5rem;
+    line-height: 2.2rem;
 }
 
 .content-box:hover .content-box-comment {
