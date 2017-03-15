@@ -18,7 +18,7 @@ app.get('/todoapp',function(req,res) {
 app.get('/tetris',function(req,res) {
     res.send('public/teris/index.html');
 });
-app.get('/pay',function(req,res) {
+app.get('/poco',function(req,res) {
     res.render('pocopay');
 });
 app.get('/arbuzz',function(req,res) {
