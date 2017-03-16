@@ -1,0 +1,69 @@
+
+
+.main-container {
+    padding: 100px 15%;
+    font-family: 'Spoqa Han Sans', Sans-serif;
+    min-width: 624px;
+}
+
+.search-bar {
+    text-align: center;
+}
+
+#send {
+    background:#0099ff;
+    color:white;
+    font: 'trebuchet ms', trebuchet;
+    padding:30px 30px;
+    border-radius:0 10px 10px 0;
+    -moz-border-radius:0 10px 10px 0;
+    -webkit-border-radius:0 10px 10px 0;
+    -o-border-radius:0 10px 10px 0;
+    border:0 none;
+    font-weight:bold;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+#send:hover {
+    background: #055195;
+    
+}
+
+#search {
+    background: #eee;
+    padding:30px;
+    border-radius:10px 0 0 10px;
+    -moz-border-radius:10px 0 0 10px;
+    -webkit-border-radius:10px 0 0 10px;
+    -o-border-radius:10px 0 0 10px;
+    border:0 none;
+    width:300px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.selfie {
+    float: left;
+    width: 300px;
+    margin-right: 100px;
+    border-radius: 15px;
+}
+
+.iam {
+    margin-top: 100px;
+    float: left;
+}
+
+#kwak {
+    margin-top: 10%;
+    line-height: 1.4rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+
+
