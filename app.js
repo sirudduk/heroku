@@ -11,6 +11,10 @@ app.get('/main',function(req,res) {
     res.render('main');
 });
 
+app.get('/about',function(req,res) {
+    res.render('about');
+});
+
 app.get('/todoapp',function(req,res) {
     res.send('public/todoapp/index.html');
 });
