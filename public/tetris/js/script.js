@@ -251,13 +251,13 @@ const colors = [
     '#89DACC'
 ]
 
-const arena = createMatrix(12,24);
+const arena = createMatrix(13,24);
 // console.log(arena); console.table(arena);
 
 const player = {
     matrix: createPiece('T'),
     pos: {x: 0, y: 0},
-    score: 0,
+    score: 0
 }
 // console.log(player.matrix);
     
@@ -284,3 +284,81 @@ document.addEventListener('keydown',event => {
     }
 })
 
+// var canvas = document.getElementById('tetris2');
+// var context = canvas.getContext('2d');
+// context.scale(20, 20);
+
+
+// var matrix = [
+//     [0,0,0],
+//     [1,1,1],
+//     [0,1,0]
+// ];
+
+// function drawMatrix(matrix, offset) {
+
+//     matrix.forEach(function (row, y) {
+//         row.forEach(function (value, x) {
+//             if(value !== 0) {
+//                 context.fillStyle = 'red';
+//                 context.fillRect(x + offset.x ,y + offset.y ,1 ,1);
+//             }
+//         });
+//     });
+
+// }
+
+// var player = {
+//     pos: {x:5 ,y:5},
+//     matrix: [
+//         [0,0,0],
+//         [1,1,1],
+//         [0,1,0]
+//     ]
+// }
+
+// function draw() {
+//     context.fillStyle = '#000';
+//     context.fillRect(0,0,canvas.width,canvas.height);
+//     drawMatrix(player.matrix, player.pos);
+
+
+// };
+
+// var dropTime = {
+//     dropCounter: 0,
+//     dropInterval: 1000,
+//     lastTime: 0
+// };
+
+// function playerDrop() {
+//     player.pos.y++;
+//     dropTime.dropCounter = 0;
+// }
+
+
+// function update(time=0) {
+//     var autotime = time - dropTime.lastTime;
+//     dropTime.lastTime = time;
+
+//     dropTime.dropCounter += autotime;
+
+//     if(dropTime.dropCounter > dropTime.dropInterval) {
+//         playerDrop();
+//     }
+
+//     draw();
+//     requestAnimationFrame(update);
+// }
+
+// document.addEventListener('keydown', function(event) {
+//     if (event.keyCode === 37) {
+//         player.pos.x--;
+//     } else if (event.keyCode === 39) {
+//         player.pos.x++;
+//     } else if (event.keyCode === 40) {
+//         playerDrop();
+//     }
+// })
+
+// update();
