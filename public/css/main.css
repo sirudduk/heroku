@@ -1,10 +1,14 @@
 
+body {
+    margin: 0 auto;
+}
+
 /* main layout */
+
 
 .main-wrap {
     margin: 50px 100px;
     font-size: 3rem;
-    
 }
 
 .main-label {
@@ -56,18 +60,29 @@
 .content-box-comment {
     background: black;
     color: white;
-    font-size: 1.5rem;
     height: 100%;
     width: 100%;
     opacity: 0;
     border-radius: 8px;
-    padding: 50px 40px 0 40px;
     transition: opacity .35s ease-in-out;
     display: block;
     position: absolute;
     letter-spacing: 1px;
     font-weight: 300;
     line-height: 2.2rem;
+}
+
+.small p{
+    font-size: 1.1rem;
+    padding: 99% 10% 0 10%;
+}
+.large p{
+    font-size: 1.3rem;
+    padding: 40% 5% 0 5%;
+}
+.medium p {
+    font-size: 1.3rem;
+    padding: 40% 5% 0 5%;
 }
 
 .content-box:hover .content-box-comment {
@@ -92,7 +107,7 @@
     width: 20%;
 }
 
-.midium {
+.medium {
     width: 46%;
 }
 
